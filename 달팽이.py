@@ -1,0 +1,47 @@
+import turtle as t
+import random as rd
+
+t1=t.Turtle()
+t2=t.Turtle()
+t3=t.Turtle()
+
+colors=['red','green','blue','orange']
+n=int(t.textinput("","몇각형?"))
+t1.speed(0)
+for i in range(100):
+    t1.pencolor(colors[rd.randrange(4)])
+    t1.fd(i)
+    t1.lt(360/n)
+
+t2.penup()
+t2.goto(-50,-80)
+t2.pendown()
+t2.backward(100)
+t2.right(30)
+t2.forward(70)
+t2.left(30)
+t2.forward(200)
+t2.left(60)
+t2.forward(200)
+t2.left(120)
+t2.forward(80)
+t2.left(60)
+t2.forward(70)
+
+t3.penup()
+t3.goto(180,30)
+t3.pendown()
+t3.circle(5)
+t3.penup()
+t3.goto(160,30)
+t3.pendown()
+t3.circle(5)
+t3.penup()
+t3.goto(180,60)
+t3.pendown()
+t3.left(60)
+t3.forward(100)
+t3.penup()
+t3.goto(160,60)
+t3.pendown()
+t3.forward(100)
